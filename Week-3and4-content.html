@@ -2,233 +2,217 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Week 3 & 4: Social Interaction & Cognitive Models in HCI</title>
+  <title>Week 3 & 4 HCI Notes</title>
 
   <style>
     body {
       font-family: Arial, sans-serif;
-      font-size: 15px;
+      font-size: 16px;
       color: #111;
       background-color: #fff;
+      line-height: 1.5;
     }
 
-    h1 {
-      font-size: 20px;
-      color: #111;
-    }
-
-    h2 {
-      font-size: 17px;
-      color: #111;
-    }
-
-    h3 {
-      font-size: 15px;
-      color: #111;
-    }
-
-    p {
-      font-size: 15px;
-      color: #111;
-    }
-
-    ul {
-      font-size: 15px;
-      color: #111;
-    }
+    h1 { font-size: 22px; }
+    h2 { font-size: 18px; }
+    h3 { font-size: 16px; }
 
     table {
-      font-size: 14px;
-      color: #111;
+      width: 100%;
+      border-collapse: collapse;
       background-color: #e6f2ff;
+      line-height: 1.4; /* spacing without padding */
     }
 
-    caption {
-      font-size: 15px;
-      color: #111;
+    thead { background-color: #cce5ff; }
+
+    th, td {
+      border: 1px solid #000;
+      text-align: left;
     }
 
-    thead {
-      background-color: #cce5ff;
-    }
-
-    img {
-      /* Keep image sizing HTML default */
-    }
-
-    footer {
-      font-size: 15px;
-      color: #111;
-      background-color: #fff;
-    }
-
-    a {
-      color: #111;
-      text-decoration: none;
-      font-size: 15px;
-    }
+    footer { font-size: 14px; }
   </style>
 </head>
 
 <body>
 
 <header>
-  <h1>Week 3 & 4: Social Interaction & Cognitive Models in HCI</h1>
+  <h1>Weeks 3 & 4 HCI Notes</h1>
 </header>
 
 <main>
 
+<!-- Week 3 Section -->
 <section>
-  <h2>Introduction</h2>
-  <p>
-    Weeks 3 and 4 focus on understanding how human–computer interaction is not only
-    a technical process, but also a social and cognitive experience. Interfaces often
-    mediate social relationships, emotions, and trust.
-  </p>
-</section>
+  <h2>Week 3: Interface Design & Usability Principles</h2>
 
-<section>
-  <h2>The “Who Paid?” Problem (Social HCI Case Study)</h2>
-  <p>
-    The “Who Paid?” problem commonly occurs in group settings such as dinners, trips,
-    or shared expenses. Although it appears to be a simple financial task, it often
-    creates social discomfort, confusion, and conflict.
-  </p>
-  <p>
-    Applications like Splitwise attempt to solve this problem, but poor interaction
-    design can increase cognitive load and social awkwardness.
-  </p>
-</section>
-
-<section>
-  <h2>Norman’s Seven Stages Applied to the “Who Paid?” Problem</h2>
-
+  <h3>Key Principles</h3>
   <table>
-    <caption>Norman’s Action Cycle – Expense Sharing Scenario</caption>
+    <caption>Usability Principles</caption>
     <thead>
       <tr>
-        <th>Stage</th>
-        <th>User Experience Example</th>
-        <th>HCI Challenge</th>
+        <th scope="col">Principle</th>
+        <th scope="col">Definition</th>
+        <th scope="col">Example in Interfaces</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th scope="row">Goal</th>
-        <td>Record that one friend paid for a group dinner</td>
-        <td>Goal is social fairness, not just data entry</td>
+        <th scope="row">Consistency</th>
+        <td>Design elements behave the same way across system</td>
+        <td>Menus, buttons, and labels have uniform style</td>
       </tr>
       <tr>
-        <th scope="row">Plan</th>
-        <td>Open app → add expense → choose participants</td>
-        <td>Multiple mental decisions required</td>
+        <th scope="row">Feedback</th>
+        <td>Provide system responses to user actions</td>
+        <td>Loading bars, confirmation messages</td>
       </tr>
       <tr>
-        <th scope="row">Specify</th>
-        <td>Enter amount, select payer, choose split method</td>
-        <td>Memory burden and fear of mistakes</td>
+        <th scope="row">Error Prevention</th>
+        <td>Reduce chances of mistakes</td>
+        <td>Disabled buttons until required fields filled</td>
       </tr>
       <tr>
-        <th scope="row">Execute</th>
-        <td>Typing, tapping, selecting options</td>
-        <td>Interrupts social interaction</td>
+        <th scope="row">Recognition over Recall</th>
+        <td>Minimize user's memory load by showing options</td>
+        <td>Dropdown menus with pre-filled suggestions</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Interface Chunking Example</h3>
+  <table>
+    <caption>Examples of Interface Chunking</caption>
+    <thead>
+      <tr>
+        <th scope="col">Example</th>
+        <th scope="col">Observation</th>
+        <th scope="col">Key Point</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">YouTube</th>
+        <td>Side panel groups account/search, navigation, personal items</td>
+        <td>Reduces cognitive load, users focus easily</td>
       </tr>
       <tr>
-        <th scope="row">Perceive</th>
-        <td>Confirmation message and updated balances</td>
-        <td>Feedback must be clear to all users</td>
+        <th scope="row">Canva</th>
+        <td>Dashboard separates features into labeled sections</td>
+        <td>Supports focus on one task at a time</td>
       </tr>
       <tr>
-        <th scope="row">Interpret</th>
-        <td>Understanding who owes how much</td>
-        <td>Financial interpretation can be stressful</td>
+        <th scope="row">DataCamp</th>
+        <td>Lessons organized into small sections</td>
+        <td>Supports STM, prevents cognitive overload</td>
       </tr>
       <tr>
-        <th scope="row">Evaluate</th>
-        <td>Check if split is fair and correct</td>
-        <td>Social trust and validation required</td>
+        <th scope="row">Etsy</th>
+        <td>Homepage content grouped into labeled categories</td>
+        <td>Users process a limited number of items at once</td>
       </tr>
     </tbody>
   </table>
 </section>
 
+<!-- Week 4 Section -->
 <section>
-  <h2>Cognitive & Social Challenges</h2>
-  <ul>
-    <li>High cognitive load due to remembering amounts and participants</li>
-    <li>Social pressure to avoid appearing unfair or “cheap”</li>
-    <li>Ambiguity in understanding who owes what</li>
-    <li>Lack of immediate shared visibility increases confusion</li>
-  </ul>
-</section>
+  <h2>Week 4: Cognitive Load, Affordances, & Interaction Styles</h2>
 
-<section>
-  <h2>Wireframe: Conceptual Design for Expense Sharing</h2>
-  <p>
-    A well-designed interface can reduce social awkwardness by making actions
-    visible, reversible, and clearly explained.
-  </p>
-
-  <img src="wireframes.jpeg"
-       alt="Conceptual wireframe for an expense sharing app’s “Add Expense” screen">
-
-</section>
-
-<section>
-  <h2>Norman vs GOMS vs KLM (Conceptual Comparison)</h2>
-  <p>
-    Different cognitive models explain different aspects of user interaction.
-    This comparison focuses
-    on what each model is best suited for.
-  </p>
-
+  <h3>Cognitive Load</h3>
   <table>
-    <caption>Model Comparison Using Expense Sharing Example</caption>
+    <caption>Cognitive Load Types</caption>
     <thead>
       <tr>
-        <th>Model</th>
-        <th>Main Focus</th>
-        <th>What It Explains</th>
-        <th>Example in “Who Paid?”</th>
+        <th scope="col">Type</th>
+        <th scope="col">Definition</th>
+        <th scope="col">Design Implication</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th scope="row">Norman</th>
-        <td>Understanding & feedback</td>
-        <td>User confusion, errors, and gulfs</td>
-        <td>Did users understand the final split?</td>
+        <th scope="row">Intrinsic</th>
+        <td>Complexity inherent to the task</td>
+        <td>Break complex tasks into smaller steps</td>
       </tr>
       <tr>
-        <th scope="row">GOMS</th>
-        <td>Task structure</td>
-        <td>Efficiency for expert users</td>
-        <td>Steps to add an expense quickly</td>
+        <th scope="row">Extraneous</th>
+        <td>Unnecessary cognitive effort caused by interface</td>
+        <td>Remove clutter, reduce irrelevant info</td>
       </tr>
       <tr>
-        <th scope="row">KLM</th>
-        <td>Physical actions</td>
-        <td>Speed of execution</td>
-        <td>Typing amount vs tapping buttons</td>
+        <th scope="row">Germane</th>
+        <td>Resources used for learning and understanding</td>
+        <td>Provide cues, examples, and summaries</td>
       </tr>
     </tbody>
   </table>
-</section>
 
-<section>
-  <h2>Conclusion</h2>
-  <p>
-    The “Who Paid?” problem demonstrates that HCI design must account for social
-    context, emotions, and cognitive limitations. Norman’s model is particularly
-    effective for analyzing such systems, while GOMS and KLM are more suitable
-    for efficiency and performance analysis.
-  </p>
+  <h3>Affordances & Signifiers</h3>
+  <table>
+    <caption>Affordances in Interface Design</caption>
+    <thead>
+      <tr>
+        <th scope="col">Concept</th>
+        <th scope="col">Definition</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Affordance</th>
+        <td>Properties that suggest how something can be used</td>
+        <td>Button appears clickable</td>
+      </tr>
+      <tr>
+        <th scope="row">Signifier</th>
+        <td>Signal that communicates how to use an element</td>
+        <td>Arrow icon indicating scroll direction</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Interaction Styles</h3>
+  <table>
+    <caption>Types of Interaction Styles</caption>
+    <thead>
+      <tr>
+        <th scope="col">Style</th>
+        <th scope="col">Definition</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Command-Line</th>
+        <td>Text-based input/output interface</td>
+        <td>Terminal or console</td>
+      </tr>
+      <tr>
+        <th scope="row">Menu Selection</th>
+        <td>User selects options from menus</td>
+        <td>Website dropdown navigation</td>
+      </tr>
+      <tr>
+        <th scope="row">Form-Fill</th>
+        <td>Users input data into fields</td>
+        <td>Login or signup forms</td>
+      </tr>
+      <tr>
+        <th scope="row">Direct Manipulation</th>
+        <td>Users interact directly with objects</td>
+        <td>Dragging files in a folder</td>
+      </tr>
+    </tbody>
+  </table>
+
 </section>
 
 </main>
 
 <footer>
-  <p> Aaisha Iqbal — B23110006001 — HCI Assignment</p>
+  <p>Aaisha Iqbal — B23110006001 — HCI Assignment</p>
   <nav aria-label="Secondary navigation">
     <a href="index.html">← Back to Home</a>
   </nav>
@@ -236,3 +220,4 @@
 
 </body>
 </html>
+
