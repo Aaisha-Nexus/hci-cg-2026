@@ -2,71 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Week 2 HCI Notes</title>
 
   <style>
     body {
       font-family: Arial, sans-serif;
+      font-size: 16px;
       color: #111;
       background-color: #fff;
-      font-size: 16px;
-      line-height: 1.5;
-      padding: 10px;
+    }
+
+    h1 {
+      font-size: 22px;
     }
 
     h2 {
-      border-bottom: 1px solid #000;
-      padding-bottom: 3px;
-      margin-top: 25px;
+      font-size: 18px;
     }
 
     h3 {
-      margin-top: 15px;
-      margin-bottom: 5px;
-    }
-
-    p {
-      margin-bottom: 10px;
-    }
-
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      margin-top: 10px;
-    }
-
-    th, td {
-      border: 1px solid #000;
-      padding: 6px;
-      text-align: left;
-    }
-
-    caption {
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-
-    img {
-      max-width: 420px;
-      height: auto;
-      display: block;
-      margin: 10px 0 20px 0;
+      font-size: 16px;
     }
 
     footer {
-      margin-top: 30px;
-      font-size: 15px;
+      font-size: 14px;
     }
 
     table {
-  background-color: #e6f2ff;
+      background-color: #e6f2ff;
     }
 
-  thead {
-  background-color: #cce5ff;
+    thead {
+      background-color: #cce5ff;
     }
-
   </style>
 </head>
 
@@ -79,7 +47,7 @@
 <main>
 
 <section>
-  <h2>1. Cognitive Processes: Attention & Perception</h2>
+  <h2>Cognitive Processes: Attention & Perception</h2>
 
   <h3>Attention</h3>
   <p>
@@ -87,20 +55,11 @@
     from the many stimuli present in the environment. Because human cognitive
     capacity is limited, users cannot attend to everything at once.
   </p>
-  <p>
-    In interface design, attention determines what users notice first and what
-    they may completely miss.
-  </p>
 
   <h3>Perception</h3>
   <p>
     Perception is the process of interpreting and giving meaning to sensory
-    information such as visuals or sounds, based on previous knowledge and
-    experience.
-  </p>
-  <p>
-    Good interfaces support correct perception by using clear layouts,
-    familiar icons, and consistent visual cues.
+    information based on previous knowledge and experience.
   </p>
 
   <img src="attention_perception image.jpg"
@@ -108,36 +67,36 @@
 </section>
 
 <section>
-  <h2>2. Short-Term Memory (STM) vs Long-Term Memory (LTM)</h2>
+  <h2>Short-Term Memory (STM) vs Long-Term Memory (LTM)</h2>
 
   <p>
-    Memory strongly affects how users interact with systems. Interfaces should
-    reduce the load on short-term memory and rely on recognition instead of recall.
+    Memory affects how users interact with systems. Interfaces should reduce
+    reliance on short-term memory and support recognition over recall.
   </p>
 
   <table>
     <caption>Comparison of STM and LTM</caption>
     <thead>
       <tr>
-        <th>Aspect</th>
-        <th>Short-Term Memory (STM)</th>
-        <th>Long-Term Memory (LTM)</th>
+        <th scope="col">Aspect</th>
+        <th scope="col">Short-Term Memory</th>
+        <th scope="col">Long-Term Memory</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <th scope="row">Capacity</th>
-        <td>Limited (around 7 ± 2 items)</td>
-        <td>Very large / unlimited</td>
+        <td>Limited (7 ± 2 items)</td>
+        <td>Very large</td>
       </tr>
       <tr>
         <th scope="row">Duration</th>
-        <td>Few seconds</td>
+        <td>Short</td>
         <td>Long-lasting</td>
       </tr>
       <tr>
         <th scope="row">Design Implication</th>
-        <td>Avoid overloading users</td>
+        <td>Avoid overload</td>
         <td>Use familiar concepts</td>
       </tr>
     </tbody>
@@ -145,29 +104,29 @@
 </section>
 
 <section>
-  <h2>3. Forgetting Curve</h2>
+  <h2>Forgetting Curve</h2>
 
   <p>
-    The forgetting curve explains how information is lost over time when there is
-    no attempt to retain it. Forgetting is rapid at first and then slows down.
+    The forgetting curve shows how information is lost over time when there is
+    no attempt to retain it.
   </p>
 
   <img src="forgetting curve image.jpg"
-       alt="Ebbinghaus forgetting curve showing rapid initial memory loss">
+       alt="Ebbinghaus forgetting curve showing memory loss over time">
 
   <ul>
-    <li>Fast memory loss occurs in the beginning</li>
-    <li>Forgetting slows over time</li>
-    <li>Revision helps retain information</li>
+    <li>Forgetting is rapid initially</li>
+    <li>Memory loss slows over time</li>
+    <li>Revision improves retention</li>
   </ul>
 </section>
 
 <section>
-  <h2>4. Norman’s Seven Stages of Action</h2>
+  <h2>Norman’s Seven Stages of Action</h2>
 
   <p>
-    Donald Norman proposed the Seven Stages of Action to describe how users interact
-    with systems and where usability problems occur.
+    Donald Norman’s model explains how users form goals, execute actions,
+    and evaluate outcomes during interaction.
   </p>
 
   <ol>
@@ -181,45 +140,43 @@
   </ol>
 
   <img src="norman stages images.jpeg"
-       alt="Norman's seven stages of action cycle diagram">
+       alt="Norman’s seven stages of action diagram">
 </section>
 
 <section>
-  <h2>5. Gulf of Execution & Gulf of Evaluation</h2>
+  <h2>Gulf of Execution & Gulf of Evaluation</h2>
+
   <img src="gulfs image.jpg"
-       alt="Gulf of Execution diagram">
+       alt="Diagram illustrating Gulf of Execution and Gulf of Evaluation">
 
   <h3>Gulf of Execution</h3>
   <p>
-    The Gulf of Execution is the gap between what the user wants to do and the
-    actions provided by the system.
+    The gap between what a user wants to do and the actions the system allows.
   </p>
-
 
   <h3>Gulf of Evaluation</h3>
   <p>
-    The Gulf of Evaluation is the gap between the system’s output and the user’s
-    understanding of whether the goal was achieved.
+    The gap between the system’s output and the user’s understanding of it.
   </p>
 
   <table>
-    <caption>Gulf Comparison</caption>
+    <caption>Comparison of the Two Gulfs</caption>
     <thead>
       <tr>
-        <th>Concept</th>
-        <th>Description</th>
-        <th>Design Goal</th>
+        <th scope="col">Gulf</th>
+        <th scope="col">Problem</th>
+        <th scope="col">Design Goal</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <th scope="row">Execution</th>
-        <td>Difficulty performing actions</td>
+        <td>Hard to perform actions</td>
         <td>Make actions clear</td>
       </tr>
       <tr>
         <th scope="row">Evaluation</th>
-        <td>Difficulty understanding feedback</td>
+        <td>Hard to interpret feedback</td>
         <td>Provide meaningful feedback</td>
       </tr>
     </tbody>
@@ -227,45 +184,27 @@
 </section>
 
 <section>
-  <h2>6. Activity: Norman’s Action Cycle – Automatic Syringe Interface</h2>
+  <h2>Case Study: Automatic Syringe Interface</h2>
 
   <p>
-    The automatic syringe used a numeric keypad to enter doses. A single key slip
-    could result in a ten-times overdose, making it a dangerous interface.
+    A numeric keypad syringe interface allowed dangerous dosing errors due
+    to slips in number entry.
   </p>
 
   <img src="syringe image.jpg"
-       alt="Comparison of numeric keypad syringe and redesigned digit button syringe">
+       alt="Numeric keypad syringe compared with redesigned digit-based syringe">
 
   <table>
     <caption>Applying Norman’s Action Cycle</caption>
     <thead>
       <tr>
-        <th>Stage</th>
-        <th>Bad Design (Numeric Keypad)</th>
-        <th>Good Design (Digit Buttons)</th>
-        <th>HCI Principle</th>
+        <th scope="col">Stage</th>
+        <th scope="col">Bad Design</th>
+        <th scope="col">Improved Design</th>
+        <th scope="col">HCI Principle</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">Goal</th>
-        <td>Deliver correct dose</td>
-        <td>Deliver correct dose</td>
-        <td>Safety-critical task</td>
-      </tr>
-      <tr>
-        <th scope="row">Plan</th>
-        <td>Remember exact number</td>
-        <td>Adjust digits gradually</td>
-        <td>Reduced cognitive load</td>
-      </tr>
-      <tr>
-        <th scope="row">Specify</th>
-        <td>Type numeric sequence</td>
-        <td>Increase/decrease digits</td>
-        <td>Recognition over recall</td>
-      </tr>
       <tr>
         <th scope="row">Execute</th>
         <td>Single slip causes overdose</td>
@@ -273,22 +212,10 @@
         <td>Error prevention</td>
       </tr>
       <tr>
-        <th scope="row">Perceive</th>
-        <td>Raw numbers only</td>
-        <td>Clear digit control</td>
-        <td>Visibility</td>
-      </tr>
-      <tr>
         <th scope="row">Interpret</th>
         <td>Confusing feedback</td>
-        <td>Easy to understand</td>
         <td>Clear feedback</td>
-      </tr>
-      <tr>
-        <th scope="row">Compare</th>
-        <td>Difficult to verify</td>
-        <td>Easy to confirm</td>
-        <td>Supports evaluation</td>
+        <td>Visibility</td>
       </tr>
     </tbody>
   </table>
@@ -297,13 +224,12 @@
 </main>
 
 <footer>
-  <p> Aaisha Iqbal — B23110006001 — HCI Assignment</p>
-
+  <p>Aaisha Iqbal — B23110006001 — HCI Assignment</p>
   <nav aria-label="Secondary navigation">
-  <a href="index.html">← Back to Home</a>
-</nav>
-
+    <a href="index.html">← Back to Home</a>
+  </nav>
 </footer>
 
 </body>
 </html>
+
