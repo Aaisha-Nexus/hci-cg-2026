@@ -3,35 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Week 2 HCI Notes</title>
-
   <style>
     body {
       font-family: Arial, sans-serif;
       font-size: 16px;
       color: #111;
       background-color: #fff;
-      line-height: 1.5;
     }
 
     h1 { font-size: 22px; }
     h2 { font-size: 18px; }
     h3 { font-size: 16px; }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background-color: #e6f2ff;
-      line-height: 1.4; /* spacing without padding */
-    }
-
-    thead { background-color: #cce5ff; }
-
-    th, td {
-      border: 1px solid #000;
-      text-align: left;
-    }
-
     footer { font-size: 14px; }
+
+    table { background-color: #e6f2ff; }
+    thead { background-color: #cce5ff; }
   </style>
 </head>
 
@@ -45,42 +32,33 @@
 
 <section>
   <h2>Cognitive Processes: Attention & Perception</h2>
+
   <h3>Attention</h3>
-  <p>Attention is the mental process of selecting a limited amount of information from the many stimuli present in the environment. Users cannot attend to everything at once.</p>
+  <p>
+    Attention is the mental process of selecting a limited amount of information
+    from the many stimuli present in the environment. Because human cognitive
+    capacity is limited, users cannot attend to everything at once.
+  </p>
 
   <h3>Perception</h3>
-  <p>Perception is the process of interpreting and giving meaning to sensory information based on previous knowledge and experience.</p>
+  <p>
+    Perception is the process of interpreting and giving meaning to sensory
+    information based on previous knowledge and experience.
+  </p>
 
-  <table>
-    <caption>Attention vs Perception</caption>
-    <thead>
-      <tr>
-        <th scope="col">Process</th>
-        <th scope="col">Definition</th>
-        <th scope="col">Example in Interfaces</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">Attention</th>
-        <td>Selecting limited info from environment</td>
-        <td>Side panel menus show only relevant options</td>
-      </tr>
-      <tr>
-        <th scope="row">Perception</th>
-        <td>Interpreting sensory info using prior knowledge</td>
-        <td>Icons and labels interpreted correctly by users</td>
-      </tr>
-    </tbody>
-  </table>
+  <img src="attention_perception image.jpg" alt="Diagram showing attention filtering sensory input and perception interpreting it">
 </section>
 
 <section>
-  <h2>Short-Term Memory (STM) & Long-Term Memory (LTM)</h2>
-  <p>Memory affects how users interact with systems. Interfaces should reduce reliance on STM and support recognition over recall.</p>
+  <h2>Short-Term Memory (STM) vs Long-Term Memory (LTM)</h2>
+
+  <p>
+    Memory affects how users interact with systems. Interfaces should reduce
+    reliance on short-term memory and support recognition over recall.
+  </p>
 
   <table>
-    <caption>STM vs LTM Comparison</caption>
+    <caption>Comparison of STM and LTM</caption>
     <thead>
       <tr>
         <th scope="col">Aspect</th>
@@ -101,8 +79,8 @@
       </tr>
       <tr>
         <th scope="row">Design Implication</th>
-        <td>Avoid overload, chunk info</td>
-        <td>Use familiar concepts, categories</td>
+        <td>Avoid overload</td>
+        <td>Use familiar concepts</td>
       </tr>
     </tbody>
   </table>
@@ -110,59 +88,52 @@
 
 <section>
   <h2>Forgetting Curve</h2>
-  <p>The forgetting curve shows how information is lost over time without review.</p>
 
-  <table>
-    <caption>Key Points of Forgetting Curve</caption>
-    <thead>
-      <tr>
-        <th scope="col">Observation</th>
-        <th scope="col">Implication for Interface Design</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">Rapid initial forgetting</th>
-        <td>Provide immediate reminders or tooltips</td>
-      </tr>
-      <tr>
-        <th scope="row">Memory loss slows over time</th>
-        <td>Schedule spaced repetition or tutorials</td>
-      </tr>
-      <tr>
-        <th scope="row">Revision improves retention</th>
-        <td>Allow repeated access to key info</td>
-      </tr>
-    </tbody>
-  </table>
+  <p>
+    The forgetting curve shows how information is lost over time when there is
+    no attempt to retain it.
+  </p>
+
+  <img src="forgetting curve image.jpg" alt="Ebbinghaus forgetting curve showing memory loss over time">
+
+  <ul>
+    <li>Forgetting is rapid initially</li>
+    <li>Memory loss slows over time</li>
+    <li>Revision improves retention</li>
+  </ul>
 </section>
 
 <section>
   <h2>Norman’s Seven Stages of Action</h2>
-  <p>Donald Norman explains how users form goals, execute actions, and evaluate outcomes.</p>
 
-  <table>
-    <caption>Stages of Action</caption>
-    <thead>
-      <tr>
-        <th scope="col">Stage</th>
-        <th scope="col">Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><th scope="row">Form Goal</th><td>User decides what to achieve</td></tr>
-      <tr><th scope="row">Form Intention</th><td>User plans how to reach the goal</td></tr>
-      <tr><th scope="row">Specify Action</th><td>User determines exact actions</td></tr>
-      <tr><th scope="row">Execute Action</th><td>User carries out actions</td></tr>
-      <tr><th scope="row">Perceive System State</th><td>User observes system response</td></tr>
-      <tr><th scope="row">Interpret System State</th><td>User understands system feedback</td></tr>
-      <tr><th scope="row">Evaluate Outcome</th><td>User compares result to goal</td></tr>
-    </tbody>
-  </table>
+  <p>
+    Donald Norman’s model explains how users form goals, execute actions,
+    and evaluate outcomes during interaction.
+  </p>
+
+  <ol>
+    <li>Form the Goal</li>
+    <li>Form the Intention</li>
+    <li>Specify the Action</li>
+    <li>Execute the Action</li>
+    <li>Perceive the System State</li>
+    <li>Interpret the System State</li>
+    <li>Evaluate the Outcome</li>
+  </ol>
+
+  <img src="norman stages images.jpeg" alt="Norman’s seven stages of action diagram">
 </section>
 
 <section>
-  <h2>Gulf of Execution & Evaluation</h2>
+  <h2>Gulf of Execution & Gulf of Evaluation</h2>
+
+  <img src="gulfs image.jpg" alt="Diagram illustrating Gulf of Execution and Gulf of Evaluation">
+
+  <h3>Gulf of Execution</h3>
+  <p>The gap between what a user wants to do and the actions the system allows.</p>
+
+  <h3>Gulf of Evaluation</h3>
+  <p>The gap between the system’s output and the user’s understanding of it.</p>
 
   <table>
     <caption>Comparison of the Two Gulfs</caption>
@@ -191,8 +162,15 @@
 <section>
   <h2>Case Study: Automatic Syringe Interface</h2>
 
+  <p>
+    A numeric keypad syringe interface allowed dangerous dosing errors due
+    to slips in number entry.
+  </p>
+
+  <img src="syringe image.jpg" alt="Numeric keypad syringe compared with redesigned digit-based syringe">
+
   <table>
-    <caption>Norman’s Action Cycle Applied</caption>
+    <caption>Applying Norman’s Action Cycle</caption>
     <thead>
       <tr>
         <th scope="col">Stage</th>
