@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab Exam Practice – HTML Foundations</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #111;
+      background-color: #fff;
+      padding: 12px;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 17px;
+      margin-top: 22px;
+      border-bottom: 1px solid #000;
+      padding-bottom: 3px;
+    }
+
+    h3 {
+      font-size: 15px;
+      margin-top: 15px;
+    }
+
+    p {
+      margin-bottom: 8px;
+    }
+
+    pre {
+      background-color: #f4f4f4;
+      padding: 8px;
+      overflow-x: auto;
+      font-size: 14px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 14px;
+      background-color: #e6f2ff;
+    }
+
+    thead {
+      background-color: #cce5ff;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 6px;
+      text-align: left;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Lab Exam Practice – HTML Foundations</h1>
+</header>
+
+<main>
+
+<section>
+  <h2>Part A: Find Mistakes (Identify + Fix)</h2>
+
+  <h3>1. Navigation menu structure</h3>
+  <p><strong>Mistake:</strong> A link is placed directly inside <code>&lt;ul&gt;</code> instead of inside <code>&lt;li&gt;</code>.</p>
+  <pre>
+&lt;nav aria-label="Primary navigation"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="cv.html"&gt;CV&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+  </pre>
+
+  <h3>2. Form label association</h3>
+  <p><strong>Mistake:</strong> The <code>for</code> attribute does not match the control’s <code>id</code>.</p>
+  <pre>
+&lt;label for="message"&gt;Message&lt;/label&gt;
+&lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;
+  </pre>
+
+  <h3>3. Heading hierarchy</h3>
+  <p><strong>Mistake:</strong> Heading levels are skipped.</p>
+  <pre>
+&lt;h1&gt;Interaction Analysis&lt;/h1&gt;
+&lt;h2&gt;Norman vs GOMS&lt;/h2&gt;
+  </pre>
+
+  <h3>4. Accessible table structure</h3>
+  <p><strong>Mistake:</strong> Table lacks caption and header cells.</p>
+  <pre>
+&lt;table&gt;
+  &lt;caption&gt;Models and what they predict&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope="col"&gt;Model&lt;/th&gt;
+      &lt;th scope="col"&gt;Predicts&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope="row"&gt;KLM&lt;/th&gt;
+      &lt;td&gt;Execution time&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+  </pre>
+
+  <h3>5. aria-current usage</h3>
+  <p><strong>Mistake:</strong> More than one link is marked as the current page.</p>
+  <pre>
+&lt;nav aria-label="Primary navigation"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="cv.html" aria-current="page"&gt;CV&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+  </pre>
+
+</section>
+
+<section>
+  <h2>Part B: True / False</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Statement</th>
+        <th>Answer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Every link inside &lt;ul&gt; must be inside an &lt;li&gt;</td>
+        <td>True</td>
+      </tr>
+      <tr>
+        <td>A page may have multiple &lt;h1&gt; headings to make text larger</td>
+        <td>False</td>
+      </tr>
+      <tr>
+        <td>aria-current="page" should be used on the active navigation item</td>
+        <td>True</td>
+      </tr>
+      <tr>
+        <td>A form is accessible without any labels</td>
+        <td>False</td>
+      </tr>
+      <tr>
+        <td>KLM predicts execution time for expert users</td>
+        <td>True</td>
+      </tr>
+    </tbody>
+  </table>
+
+</section>
+
+<section>
+  <h2>Part C: Short Answers</h2>
+
+  <h3>Semantic vs Generic Elements</h3>
+  <p>
+    Semantic elements describe their meaning and role clearly to browsers and
+    assistive technologies, while generic elements have no inherent meaning and
+    are used only for layout or grouping.
+  </p>
+
+  <h3>Why KLM does not model planning</h3>
+  <p>
+    KLM focuses on low-level physical actions and assumes that planning,
+    decision-making, and interpretation have already been completed by the user.
+  </p>
+
+</section>
+
+</main>
+
+<footer>
+  <p>Aaisha Iqbal  — B23110006001 — HCI Lab</p>
+
+  <nav aria-label="Secondary navigation">
+  <a href="index.html">← Back to Home</a>
+</nav>
+
+</footer>
+
+</body>
+</html>

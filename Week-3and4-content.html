@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Week 3 & 4: Social Interaction & Cognitive Models in HCI</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.45;
+      color: #111;
+      background-color: #fff;
+      padding: 10px;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 17px;
+      margin-top: 22px;
+      border-bottom: 1px solid #000;
+      padding-bottom: 3px;
+    }
+
+    h3 {
+      font-size: 15px;
+      margin-top: 15px;
+    }
+
+    p {
+      margin-bottom: 8px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 6px;
+      text-align: left;
+    }
+
+    caption {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    /* .image-placeholder {
+      border: 1px solid #999;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 14px;
+    } */
+
+    img {
+  max-width: 300px;
+  height: auto;
+  }
+
+
+    footer {
+      margin-top: 25px;
+      font-size: 15px;
+    }
+
+    table {
+  background-color: #e6f2ff;
+    }
+
+    thead {
+  background-color: #cce5ff;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Week 3 & 4: Social Interaction & Cognitive Models in HCI</h1>
+</header>
+
+<main>
+
+<section>
+  <h2>Introduction</h2>
+  <p>
+    Weeks 3 and 4 focus on understanding how human–computer interaction is not only
+    a technical process, but also a social and cognitive experience. Interfaces often
+    mediate social relationships, emotions, and trust.
+  </p>
+</section>
+
+<section>
+  <h2>The “Who Paid?” Problem (Social HCI Case Study)</h2>
+  <p>
+    The “Who Paid?” problem commonly occurs in group settings such as dinners, trips,
+    or shared expenses. Although it appears to be a simple financial task, it often
+    creates social discomfort, confusion, and conflict.
+  </p>
+  <p>
+    Applications like Splitwise attempt to solve this problem, but poor interaction
+    design can increase cognitive load and social awkwardness.
+  </p>
+</section>
+
+<section>
+  <h2>Norman’s Seven Stages Applied to the “Who Paid?” Problem</h2>
+
+  <table>
+    <caption>Norman’s Action Cycle – Expense Sharing Scenario</caption>
+    <thead>
+      <tr>
+        <th>Stage</th>
+        <th>User Experience Example</th>
+        <th>HCI Challenge</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Goal</th>
+        <td>Record that one friend paid for a group dinner</td>
+        <td>Goal is social fairness, not just data entry</td>
+      </tr>
+      <tr>
+        <th scope="row">Plan</th>
+        <td>Open app → add expense → choose participants</td>
+        <td>Multiple mental decisions required</td>
+      </tr>
+      <tr>
+        <th scope="row">Specify</th>
+        <td>Enter amount, select payer, choose split method</td>
+        <td>Memory burden and fear of mistakes</td>
+      </tr>
+      <tr>
+        <th scope="row">Execute</th>
+        <td>Typing, tapping, selecting options</td>
+        <td>Interrupts social interaction</td>
+      </tr>
+      <tr>
+        <th scope="row">Perceive</th>
+        <td>Confirmation message and updated balances</td>
+        <td>Feedback must be clear to all users</td>
+      </tr>
+      <tr>
+        <th scope="row">Interpret</th>
+        <td>Understanding who owes how much</td>
+        <td>Financial interpretation can be stressful</td>
+      </tr>
+      <tr>
+        <th scope="row">Evaluate</th>
+        <td>Check if split is fair and correct</td>
+        <td>Social trust and validation required</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Cognitive & Social Challenges</h2>
+  <ul>
+    <li>High cognitive load due to remembering amounts and participants</li>
+    <li>Social pressure to avoid appearing unfair or “cheap”</li>
+    <li>Ambiguity in understanding who owes what</li>
+    <li>Lack of immediate shared visibility increases confusion</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Wireframe: Conceptual Design for Expense Sharing</h2>
+  <p>
+    A well-designed interface can reduce social awkwardness by making actions
+    visible, reversible, and clearly explained.
+  </p>
+
+  <img src="wireframes.jpeg"
+       alt="Conceptual wireframe for an expense sharing app’s “Add Expense” screen">
+
+</section>
+
+<section>
+  <h2>Norman vs GOMS vs KLM (Conceptual Comparison)</h2>
+  <p>
+    Different cognitive models explain different aspects of user interaction.
+    This comparison focuses
+    on what each model is best suited for.
+  </p>
+
+  <table>
+    <caption>Model Comparison Using Expense Sharing Example</caption>
+    <thead>
+      <tr>
+        <th>Model</th>
+        <th>Main Focus</th>
+        <th>What It Explains</th>
+        <th>Example in “Who Paid?”</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Norman</th>
+        <td>Understanding & feedback</td>
+        <td>User confusion, errors, and gulfs</td>
+        <td>Did users understand the final split?</td>
+      </tr>
+      <tr>
+        <th scope="row">GOMS</th>
+        <td>Task structure</td>
+        <td>Efficiency for expert users</td>
+        <td>Steps to add an expense quickly</td>
+      </tr>
+      <tr>
+        <th scope="row">KLM</th>
+        <td>Physical actions</td>
+        <td>Speed of execution</td>
+        <td>Typing amount vs tapping buttons</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Conclusion</h2>
+  <p>
+    The “Who Paid?” problem demonstrates that HCI design must account for social
+    context, emotions, and cognitive limitations. Norman’s model is particularly
+    effective for analyzing such systems, while GOMS and KLM are more suitable
+    for efficiency and performance analysis.
+  </p>
+</section>
+
+</main>
+
+<footer>
+  <p> Aaisha Iqbal — B23110006001 — HCI Assignment</p>
+  <nav aria-label="Secondary navigation">
+  <a href="index.html">← Back to Home</a>
+</nav>
+
+</footer>
+
+</body>
+</html>
